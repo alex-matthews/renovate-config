@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "config:base",
+    ":dependencyDashboard",
+    ":disableRateLimiting",
+    "docker:enableMajor",
+    "docker:pinDigests",
+    ":automergeDigest",
+    ":enablePreCommit",
+    "github>alex-matthews/renovate-config:commit-message",
+    "github>alex-matthews/renovate-config:pr-labels",
+    "github>alex-matthews/renovate-config:semantic-commits",
+    "github>alex-matthews/renovate-config:generic-regex-manager"
+  ],
+  "onboarding": false,
+  "requireConfig": "optional",
+  "timezone": "Pacific/Auckland",
+  "dependencyDashboardTitle": "Renovate Dashboard",
+  "suppressNotifications": ["prIgnoreNotification"],
+  "commitBodyTable": true,
+  "rebaseWhen": "conflicted"
+}
