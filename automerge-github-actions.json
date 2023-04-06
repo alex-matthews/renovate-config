@@ -4,8 +4,8 @@
       "matchManagers": ["github-actions"],
       "automerge": true,
       "automergeType": "branch",
-      "requiredStatusChecks": null,
-      "matchUpdateTypes": ["minor", "patch"]
+      "matchUpdateTypes": ["minor", "patch", "digest"],
+      "ignoreTests": true
     }
   ]
 }
